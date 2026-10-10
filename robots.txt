@@ -84,6 +84,7 @@ Disallow: /*?*do=search*
 User-agent: *
 Disallow: /*?*do=diff*
 
-Sitemap: https://datacadamia.com/doku.php?do=sitemap
+# Sitemap URL should be qualified
+# Sitemap: https://yourdomain.com/doku.php?do=sitemap
 Crawl-delay: 3
 
