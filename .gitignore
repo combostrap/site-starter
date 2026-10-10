@@ -12,6 +12,7 @@
 # Robots file
 !robots.txt
 !README.md
+!CONTRIBUTING.md
 # Don't ignore the doc/docs directories
 !doc/
 !doc/**
@@ -32,6 +33,12 @@
 data/*
 !data/pages/
 !data/pages/**
+# Ignore the wiki documentation
+data/pages/wiki/
+data/pages/wiki/**
+# Ignore the wiki playgournd
+data/pages/playground/
+data/pages/playground/**
 !data/media/
 !data/media/**
 !data/combo/
