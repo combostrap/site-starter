@@ -13,6 +13,7 @@
 !robots.txt
 !README.md
 !CONTRIBUTING.md
+!Taskfile.yml
 # Don't ignore the doc/docs directories
 !doc/
 !doc/**

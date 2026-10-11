@@ -7,10 +7,14 @@ On your desktop:
 ```bash
 git clone https://github.com/ComboStrap/site-starter
 cd site-starter
+
+# With task
+task run
+# or with docker
 docker run \
   --name combo-site-starter \
   --rm \
-  -p 8081:80 \
+  -p 8091:80 \
   --user 1000:1000 \
   -e DOKU_DOCKER_ENV=dev \
   -e DOKU_DOCKER_ACL_POLICY='public' \
@@ -19,4 +23,4 @@ docker run \
   -v $PWD:/var/www/html \
   ghcr.io/combostrap/dokuwiki:php8.3-latest
 ```
-The default ComboStrap site should be available at: http://localhost:8081 
+The default ComboStrap site should be available at: http://localhost:8091 

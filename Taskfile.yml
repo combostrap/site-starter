@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  # Run
+  run:
+    cmds:
+      - |
+        docker run \
+          --name site-starter \
+          --rm \
+          -p 8091:80 \
+          --user 1000:1000 \
+          -e DOKU_DOCKER_ENV=dev \
+          -e DOKU_DOCKER_ACL_POLICY='public' \
+          -e DOKU_DOCKER_ADMIN_NAME='admin' \
+          -e DOKU_DOCKER_ADMIN_PASSWORD='welcome' \
+          -v $PWD:/var/www/html \
+          ghcr.io/combostrap/dokuwiki:php8.3-latest

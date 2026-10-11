@@ -18,7 +18,7 @@ run:
 docker run \
   --name combo-site-starter \
   --rm \
-  -p 8081:80 \
+  -p 8091:80 \
   -e DOKU_DOCKER_GIT_SITE='https://github.com/ComboStrap/site-starter' \
   ghcr.io/combostrap/dokuwiki:php8.3-latest
 ```
@@ -27,7 +27,7 @@ docker run \
 ## How to get this website with an admin user 
 
 To get this website:
-* available at: http://localhost:8081 on your desktop
+* available at: http://localhost:8091 on your desktop
 * with an `admin` user (password: `welcome`)
 * in `public` ACL policy (read for everyone, write and upload for registered users)
 
@@ -35,7 +35,7 @@ To get this website:
 docker run \
   --name combo-site-default \
   --rm \
-  -p 8081:80 \
+  -p 8091:80 \
   -e DOKU_DOCKER_ACL_POLICY='public' \
   -e DOKU_DOCKER_ADMIN_NAME='admin' \
   -e DOKU_DOCKER_ADMIN_PASSWORD='welcome' \
@@ -43,11 +43,6 @@ docker run \
   ghcr.io/combostrap/dokuwiki:php8.3-latest
 ```
 
-
-
-## How to develop or contribute
-
-See [How to develop or contribute](docs/dev.md)
 
 
 
